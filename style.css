@@ -1,0 +1,112 @@
+body {
+    background-image: url(img/fond_03.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h2{
+    color: #3b8d90;
+}
+
+h5{
+font-style: italic;
+color: #575252;
+}
+
+.texteh5{
+    font-style: italic;
+}
+
+.container {
+    display: flexbox;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.navbar {
+    background-color: rgba(23, 162, 184, 0.59);
+    text-align: center;
+}
+
+.blanc{
+    border: 1em rgba(255, 255, 255, 0.34) solid;
+    background-color: white;
+    margin: 5em;
+}
+#danses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#prof{
+    display: flex;
+    padding: 2em;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#list{
+    padding-right: 12vw;
+}
+#annexe{
+    font-style: italic;
+}
+
+/**************carte******************/
+
+#mapid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height:36vh;
+    width: 70%;
+    border: 2px solid #575252;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 10px #73b6e6;
+    box-shadow: 5px 5px 10px #73b6e6;
+    z-index: 100;
+    margin: auto;
+}
+
+.leaflet-popup-content-wrapper {
+    color: #17a2b8;
+}
+
+/**************footer******************/
+footer {
+    background-color: rgba(23, 162, 184, 0.59);
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#foot {
+    text-align: center !important;
+    color: white;
+}
+
+a.footerInfo {
+    color: white !important;
+}
+
+#footerInfo {
+    color: white !important;
+}
+
+/*****************medias***********/
+@media screen and (max-width:992px){
+
+    .blanc{
+        border: 1em rgba(255, 255, 255, 0.34) solid;
+        background-color: white;
+        margin: 2em;
+    }
+}
+
+@media screen and (max-width:470px){
+    .proff{
+        width: 80%;
+        height: auto;
+    }
+}

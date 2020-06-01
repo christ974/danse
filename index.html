@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uno Latino</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="img/uno.png" width="140" height="100" alt="logo de l'école de danse" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark" role="navigation">
+
+            <div class="container-fluid">
+
+                <a href="#ecole"><img id="logo_nav" src="img/logo_danse_detoure.png" width="60em" height="auto" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand active" href="#ecole">L'école<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand" href="#events">Evènements</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand active" href="#pas_danse">Pas de danse<span class="sr-only"></span></a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand" href="#enseignants">Enseignants</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand" href="#tarif">Tarifs</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link navbar-brand" href="#lieu">Nous trouver</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navigation -->
+    </header>
+
+    <div class="container">
+        
+            <div class="blanc" id="ecole"><br><br>
+                <h2 >L'école de danse</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam excepturi, omnis qui, asperiores tempora dolorum eaque delectus mollitia, vel doloribus! Pariatur harum possimus vero magni excepturi praesentium illo placeat ?</p>
+                <h5>Historique</h5>
+                <p class="texteh5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate mollitia nemo quam molestiae, odio pariatur voluptatem quae distinctio unde illo nam earum esse at aliquam totam reiciendis quasi repellendus corrupti.</p>
+            </div>
+
+            <div class="blanc" id="events"><br><br>
+                <h2 >Les évènements</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam excepturi, omnis qui, asperiores tempora dolorum eaque delectus mollitia, vel doloribus! Pariatur harum possimus vero magni excepturi praesentium illo placeat ?</p>
+                <h5>Bientôt</h5>
+                <p class="texteh5">Découvrez nos évènements</p>
+                <div id="carrousel">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/affiche_salsa_02.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/affiche_salsa_03.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/affiche_salsa_04.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>     
+            </div>
+
+            <div class="blanc" id="pas_danse"><br><br>
+                <h2>Les pas de danse</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam excepturi ?</p>
+                <div id="danses">
+                    <div class="dans">
+                            <h5>La Bachata</h5>
+                            <img src="img/img_video_01.png" alt="">
+                            
+                        </div>    
+                        <div class="dans">
+                            <h5>Le Paso Doble</h5>
+                            <img src="img/img_video_02.png" alt="">
+                        </div>
+                        <div class="dans">
+                            <h5>La Salsa</h5>
+                            <img src="img/img_video_03.png" alt="">
+                        </div>
+                        <div class="dans">    
+                            <h5>Danse solo</h5>
+                            <img src="img/img_video_04.png" alt="">
+                        </div>
+                </div>
+           </div>
+
+           <div class="blanc" id="enseignants"><br><br>
+                <h2>L'équipe d'enseignants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam excepturi, omnis qui, asperiores tempora dolorum eaque delectus mollitia, vel doloribus! </p>
+                <p id="prof">
+                <img class="proff" src="img/prof-1.jpg" alt="">
+                <img class="proff" src="img/prof-2.jpg" alt="">
+                <img class="proff" src="img/prof-3.jpg" alt="">
+                <img class="proff" src="img/prof-4.jpg" alt="">
+            </p>
+            </div>
+
+            <div class="blanc" id="tarif"><br><br>
+                <h2>Les tarifs</h2>
+                <div id="list">
+                <ul >
+                    <li class="list">Cours à l'essai : 12€ </li>
+                    <li class="list">Cours à la séance : 12€</li>
+                    <li class="list">Abonnement normal : (9 x séances) + 12€*</li>
+                    <li class="list">Abonnement ancien élève** : (8 x séances) + 12€</li>
+                    <li class="">Abonnement étudiant*** : (7 x séances) + 12€</li>
+                </ul>
+                
+                <p id="annexe">*Frais d'inscription -
+                    **A partir de la 4ème année d'inscription consécutive<br>
+                    ***Sur présentation de la carte d'étudiant (26 ans maximum).</p>
+                </div>
+            </div>
+
+            <div class="blanc" id="contact"><br><br>
+                <h2>Nous contactez</h2>
+                <form>
+                    <fieldset>
+                        <div class="form-group">
+                            <input type="text" class="form-control has-error" id="nom" placeholder="Nom et prénom">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control has-error" id="email" placeholder="Votre adresse émail">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control has-error" id="bio" rows="2" placeholder="Votre message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-info" id="envoi">Envoyer</button>
+
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="blanc" id="lieu"><br><br>
+                <h2>Nous trouver</h2>
+                <div id="mapid">
+                    <script>
+                        var mymap = L.map('mapid').setView([-20.91, 55.48], 16);
+                        //calque img
+                        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                            maxZoom: 24,
+                            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                            id: 'mapbox.streets'
+        
+                            //ajout à la map
+                        }).addTo(mymap);
+                        var marker = L.marker([-20.8734, 55.4482]).addTo(mymap)
+                        marker.bindPopup("<b>Ecole Latino</b><br>82 bis, rue Tchatchatcha <br> 97400 Saint-Denis").openPopup();
+        
+                    </script>
+                </div>
+            </div>
+    </div>
+            <footer class="footer-dark text-center justify-content-center" id="foot">
+                
+                <span class="foote">
+                    <span class="foote">
+                        <i class="fa fa-home" aria-hidden="true"> </i> 82 bis, rue Tchatchatcha - 97400 Saint-Denis -<br>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        latino@boom.com -
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        0692 02 02 03
+                    </span>
+                    <br>
+                </span>
+                <span class="foote"> <a id="footerInfo" href="mentions_legales.html" target="_blank"> Mentions légales </a>&amp; ©Latino - 2020 </span>
+        
+            </footer>
+            <!-- Footer -->
+        
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
